@@ -66,7 +66,17 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-item {
+.header-potfolio:hover,
+.header-potfolio:focus,
+.header-contact:hover,
+.header-contact:focus,
+.header-studio-second:hover,
+.header-studio-second:focus {
+  color: var(--accent-color);
+}
+.header-potfolio,
+.header-contact,
+.header-studio-second {
   transition: color var(--time) var(--timing-function);
 }
 .header-right .header-right-item + .header-right-item {
@@ -347,11 +357,18 @@ ul {
   border-radius: 4px;
   color: var(--second-title-color);
   cursor: pointer;
+  transition: color var(--time) var(--timing-function);
+  transition: background-color var(--time) var(--timing-function);
 }
 .main-buttons-item:hover,
 .main-buttons-item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.main-button-other:hover,
+.main-button-other:focus {
+  color: var(--main-title-colore);
+  background-color: var(--accent-color);
 }
 .projects-list {
   display: flex;
