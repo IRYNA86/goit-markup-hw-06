@@ -792,6 +792,7 @@ ul {
   top: 14px;
   right: 14px;
   cursor: pointer;
+  background-color: transparent;
 }
 .open-modal {
   display: block;
@@ -806,6 +807,11 @@ ul {
   padding: 6px;
   width: 11px;
   height: 11px;
+  transition: fill var(--time) var(--timing-function);
+}
+.icon-close:focus,
+.icon-close:hover {
+  fill: var(--accent-color);
 }
 .open-modal:focus,
 .open-modal:hover {
